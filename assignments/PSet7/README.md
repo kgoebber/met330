@@ -135,10 +135,10 @@ Written Response: Formal typed response to questions \#3
 Output Examples:
 
 Yearly Global Mean Temperature Anomaly:
-
+![Global yearly temperature anomalies for 2018](global_anomaly_2018.png)
 
 Valparaiso, IN Yearly Anomalies 1950-2019:
-
+![VPZ Temperature Anomaly 1950-2018](VPZ_anomaly_1950_2018.png)
 
 **Evaluation Criteria**
 
