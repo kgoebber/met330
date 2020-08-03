@@ -101,8 +101,7 @@ high-quality output to an end user.
 
 LI  = (T<sub>env</sub> – T<sub>parcel</sub>)<sub>500</sub>
 
-    where T<sub>env</sub> is the temperature of the environment (at 500 hPa) and
-    T<sub>parcel</sub> is the temperature of the surface-based parcel (at 500 hPa).
+> where T<sub>env</sub> is the temperature of the environment (at 500 hPa) and T<sub>parcel</sub> is the temperature of the surface-based parcel (at 500 hPa).
 
 5.  Create a definition to calculate the Total Totals (TT) index and add
     to the text output of problem 2. Be sure to include an appropriate
@@ -112,10 +111,7 @@ LI  = (T<sub>env</sub> – T<sub>parcel</sub>)<sub>500</sub>
 
 TT = T<sub>850</sub> + T<sub>d850</sub> - 2T<sub>500</sub>
 
-    where T<sub>850</sub> is the temperature of the environment at 850 hPa, T<sub>d850</sub>
-    is the dewpoint temperature of the environment at 850 hPa, and T<sub>500</sub>
-    is the temperature of of the environment at 500 hPa. The TT index is
-    derived from two parts: the vertical totals (VT) and the cross totals (CT),
+> where T<sub>850</sub> is the temperature of the environment at 850 hPa, T<sub>d850</sub> is the dewpoint temperature of the environment at 850 hPa, and T<sub>500</sub> is the temperature of of the environment at 500 hPa. The TT index is derived from two parts: the vertical totals (VT) and the cross totals (CT),
 
 VT = T<sub>850</sub> - T<sub>500</sub>
 
