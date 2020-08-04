@@ -171,7 +171,7 @@ Hours below 32F: 15
 *Meteogram:*
 
 ![A close up of a piece of paper Description automatically
-generated](ORD_meteogram_20140312.png){width="6.5in" height="8.265972222222222in"}
+generated](ORD_meteogram_20140312.png)
 
 **Evaluation Criteria**
 
