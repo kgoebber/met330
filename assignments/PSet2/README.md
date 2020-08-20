@@ -80,7 +80,7 @@ days since 1 January 4713 BC on the Julian calendar.
 
     Program Name: **climate\_check.for**
 
-    Program Input: From command line read year, month, day, high
+    Program Input: From a file read a series of year, month, day, high
     temperature in Fahrenheit
 
     Program Output:
