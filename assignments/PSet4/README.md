@@ -58,8 +58,8 @@ Problems
 
 3.  Write a Python program to determine the months that the standardized
     Southern Oscillation Index (SOI) indicate El Nino conditions (for
-    simplicity defined for this assignment as SOI \< -1.25) or La Nina
-    conditions (for simplicity defined for this assignment as SOI \>
+    simplicity defined for this assignment as SOI \<= -1.25) or La Nina
+    conditions (for simplicity defined for this assignment as SOI \>=
     1.25). Report the actual SOI value, the month and year it occurred,
     and whether this is indicative of El Nino or La Nina conditions over
     the period 1951 to current. Additionally, determine the maximum and
@@ -94,8 +94,8 @@ Problems
 > 
 > Generally, an El Nino or La Nina event cannot be determined from any
 > one month of an ENSO index, however, for simplicity here we define an
-> El Nino event when the SOI value is below -1.25 for any particular
-> month and a La Nina event when the SOI value is above 1.25 for any
+> El Nino event when the SOI value is less than or equal to -1.25 for any particular
+> month and a La Nina event when the SOI value is greater than or equal to 1.25 for any
 > particular month.
 > 
 > Notes:
