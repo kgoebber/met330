@@ -56,26 +56,27 @@ Information about the data contained in the file is available at:
 
 **Problems**
 
-1.  Create a script that will generate a meteogram for a day based on
-    the file given in the repository (which is for ORD for March 12,
-    2014). *NOTE: A different file will be used to grade this
-    assignment.* The goal is to have a script that could accept any file
+Program Name: **meteogram.py**
+
+Input:  Have command line input for two different pieces:
+        
+        Station Three-Letter ID (e.g., ORD)
+        Date as YYYYMMDD
+
+Output: That specified in problem 2 and the meteogram figur (figure needs to be saved as **\<station\>\_meteogram\_\<YYYYMMDD\>.png**
+
+1.  Create a script that will read data from a surface file in the format given w
+    with the example file and generate a meteogram for that days worth of data(which is for ORD for March 12, 2014). *NOTE: A different file will be used to grade this assignment.* The goal is to have a script that could accept any file
     (with the same format), but it could be for any location and day.
     The meteogram must include temperature, dewpoint, altimeter (in Hg),
     wind speed and direction, and precipitation accumulation throughout
-    the day.
+    the day. At runtime the user should be asked for two pieces of input: 1)
+    station three-letter identifier (e.g., ORD) and 2) date in YYYYMMDD format.
 
     Surface data for a given date starts 10 minutes before 0000 UTC to
     2349 UTC. For example, the surface observations for March 12, 2014
     is from 2350 UTC 11 March to 2349 UTC 12 March 2014.
-
-    Program Name: **meteogram.py**
-
-    Input: Station Three-Letter ID (e.g., ORD), Date as YYYYMMDD
-
-    Output: That specified in problem 2 and the meteogram figure (figure
-    needs to be saved as **\<station\>\_meteogram\_\<YYYYMMDD\>.png**
-
+    
 2.  Compute and print to the screen the following daily statistics for
     the observation location.
 
@@ -116,12 +117,17 @@ Notes on Matplotlib:
 
 -   Fill between axes
 
-    -   <https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/fill_between_demo.html>
+    -   <https://matplotlib.org/3.3.1/gallery/lines_bars_and_markers/fill_between_demo.html>
 
 
 **Example Output**
 
 *Text Output:*
+
+Input Station Three-Letter ID (e.g., ORD): ORD
+
+Input Date: 20140312
+<br><br>
 
 Daily Statistics for ORD on 2014-03-12
 
@@ -132,6 +138,7 @@ Max: 37.94 F at 2014-03-11 23:51:00
 Min: 26.06 F at 2014-03-12 16:51:00
 
 Mean: 30.87 F
+<br><br>
 
 Statistics for Dew Point Temperature
 
@@ -140,6 +147,7 @@ Max: 30.02 F at 2014-03-12 02:51:00
 Min: 6.08 F at 2014-03-12 22:51:00
 
 Mean: 21.09 F
+<br><br>
 
 Statistics for Altimeter Pressure
 
@@ -148,6 +156,7 @@ Max: 30.02 in Hg at 2014-03-12 22:51:00
 Min: 29.68 in Hg at 2014-03-12 06:51:00
 
 Mean: 29.81 in Hg
+<br><br>
 
 Statistics for Wind Speed
 
@@ -160,6 +169,7 @@ Min: 9.0 kt at 2014-03-12 02:51:00
 Min Wind from 360.0 degrees
 
 Mean: 15.25 kt
+<br><br>
 
 Precipitation Accumulation: 0.6201 in
 
