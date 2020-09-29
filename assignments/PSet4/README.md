@@ -17,7 +17,9 @@
 
 *Due Via Blackboard*
 
--   A PDF version of your code. Make sure the honor code appears in the comment block at the beginning of the script and that it has your full typed out name. This will serve as your assertion that you have upheld the honor code.
+-   A PDF version of your code. Make sure the honor code appears in the comment 
+block at the beginning of the script and that it has your full typed out name. 
+This will serve as your assertion that you have upheld the honor code.
 
 **Honor Code**
 
@@ -78,9 +80,13 @@ Problems
 
 -   The minimum SOI value for each year
 
+-   Report the year, month, and SOI value for months that have El Nino or La Nina Conditions
+
 -   The total number of months spent in La Nina for the dataset
 
 -   The total number of months spent in El Nino for the dataset
+
+-   Print the maximum and minimum SOI values and the month and year they occur
 
 > **Background**
 > 
@@ -121,9 +127,17 @@ Problems
 
     >>>
 
+    Average SOI 2020: -0.34
+    Min SOI 2020: -3.5
+    Max SOI 2020: 1.34
+
     El Nino: February 2020
 
     SOI: -3.5
+
+    Average SOI 2021: 0.5
+    Min SOI 2021: -0.5
+    Max SOI 2021: 1.4
 
     La Nina: July 2021
 
@@ -141,6 +155,9 @@ Problems
 
     Min SOI of -3.1 in December 2024
 
+    Total Number of Months in El Nino: 25
+    Total Number of Months in La Nina: 33
+    
     >>>
 
 **Evaluation Criteria**
