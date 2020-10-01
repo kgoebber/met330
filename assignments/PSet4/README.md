@@ -86,7 +86,7 @@ Problems
 
 -   The total number of months spent in El Nino for the dataset
 
--   Print the maximum and minimum SOI values and the month and year they occur
+-   Print the overall maximum and minimum SOI values and the month and year they occur
 
 > **Background**
 > 
