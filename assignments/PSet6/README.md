@@ -16,7 +16,9 @@
 
 *Due Via Blackboard*
 
--   A PDF version of your code. Make sure the honor code appears in the comment block at the beginning of the script and that it has your full typed out name. This will serve as your assertion that you have upheld the honor code.
+-   A PDF version of your code. Make sure the honor code appears in the comment 
+block at the beginning of the script and that it has your full typed out name. 
+This will serve as your assertion that you have upheld the honor code.
 
 **Honor Code**
 
@@ -65,33 +67,33 @@ high-quality output to an end user.
     create well formatted output similar in style to that of the Wyoming
     site including all appropriate variables:
 
--   Potential Temperature
+    -   Potential Temperature
 
--   Mixing Ratio
+    -   Mixing Ratio
 
--   Relative Humidity
+    -   Relative Humidity
 
--   Wind Speed
+    -   Wind Speed
 
--   Wind Direction
+    -   Wind Direction
 
-> Note: Utilize your resources well. These can all be calculated easily
-> using the MetPy module.
+    > Note: Utilize your resources well. These can all be calculated easily
+    > using the MetPy module.
 
 3.  Calculate the following levels for a surface-based parcel path and
     add to the text output of problem 2:
 
--   Lifting Condensation Level
+    -   Lifting Condensation Level
 
--   Level of Free Convection
+    -   Level of Free Convection
 
--   Equilibrium Level
+    -   Equilibrium Level
 
--   SBCAPE
+    -   SBCAPE
 
--   SBCIN
+    -   SBCIN
 
-    Note: Utilize your resources well. These can all be calculated easily using the MetPy module.
+    > Note: Utilize your resources well. These can all be calculated easily using the MetPy module.
 
 4.  Create a definition to calculate Lifted Index (LI) and add to the
     text output of problem 2. Be sure to include an appropriate
@@ -99,9 +101,10 @@ high-quality output to an end user.
     being calculated, and how is it being calculated. For reference, the
     following is the equation for calculating LI,
 
-LI  = (T<sub>env</sub> – T<sub>parcel</sub>)<sub>500</sub>
+    LI  = (T<sub>env</sub> – T<sub>parcel</sub>)<sub>500</sub>
 
-> where T<sub>env</sub> is the temperature of the environment (at 500 hPa) and T<sub>parcel</sub> is the temperature of the surface-based parcel (at 500 hPa).
+    > where T<sub>env</sub> is the temperature of the environment (at 500 hPa) and
+    > T<sub>parcel</sub> is the temperature of the surface-based parcel (at 500 hPa).
 
 5.  Create a definition to calculate the Total Totals (TT) index and add
     to the text output of problem 2. Be sure to include an appropriate
@@ -109,15 +112,18 @@ LI  = (T<sub>env</sub> – T<sub>parcel</sub>)<sub>500</sub>
     being calculated, and how is it being calculated. For reference, the
     following is the equation for calculating TT,
 
-TT = T<sub>850</sub> + T<sub>d850</sub> - 2T<sub>500</sub>
+    TT = T<sub>850</sub> + T<sub>d850</sub> - 2T<sub>500</sub>
 
-> where T<sub>850</sub> is the temperature of the environment at 850 hPa, T<sub>d850</sub> is the dewpoint temperature of the environment at 850 hPa, and T<sub>500</sub> is the temperature of of the environment at 500 hPa. The TT index is derived from two parts: the vertical totals (VT) and the cross totals (CT),
+    > where T<sub>850</sub> is the temperature of the environment at 850 hPa, T<sub>d850</sub>
+    >  is the dewpoint temperature of the environment at 850 hPa, and T<sub>500</sub> is the
+    > temperature of of the environment at 500 hPa. The TT index is derived from two parts:
+    > the vertical totals (VT) and the cross totals (CT),
 
-VT = T<sub>850</sub> - T<sub>500</sub>
+    VT = T<sub>850</sub> - T<sub>500</sub>
 
-CT = T<sub>d850</sub> - T<sub>500</sub>
+    CT = T<sub>d850</sub> - T<sub>500</sub>
 
-TT = VT + CT
+    TT = VT + CT
 
 6.  Plot the sounding on a skew-T using Python and include the
     surfaced-based parcel profile. Have an appropriate title on the
@@ -134,73 +140,52 @@ TT = VT + CT
     otherwise issue the following statement, "NOTE: Severe Thunderstorms
     Not Likely To Occur."
 
--   CAPE \>= 1500 J/kg
+    -   CAPE \>= 1500 J/kg
 
--   CIN \>= -125 J/kg
+    -   CIN \>= -125 J/kg
 
--   LI \<= -2C
+    -   LI \<= -2C
 
 Text Output Example (blue text indicating input from commandline):
 
->>>
+        >>>
 
-Input Location: SGF
+        Input Location: SGF
 
-Input Date/Time (YYYYMMDDHH): 2004061212
+        Input Date/Time (YYYYMMDDHH): 2004061212
 
-SGF Observations at 12Z 12 Jun 2004
+        SGF Observations at 12Z 12 Jun 2004
+        ------------------------------------------------
+        PRES   TEMP  DWPT  RELH  MIXR  DRCT  SKNT  THTA
+        hPa     C      C     %   g/kg  deg   knot   K
+        ------------------------------------------------
+        986.0  22.4  21.2  92.9  16.60 200     5  298.3
+        948.0  23.6  21.1  85.9 1 6.85 229    23  301.3
+        .
+        .
+        .
+        .
+        .
+        .
+        4.8   -23.3 -57.3  2.8   3.46   63   35  1148.1
+        4.7   -24.0 -57.6  2.9   3.41   59   35  1151.8
 
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+        Station Information and sounding indices
 
-PRES TEMP DWPT RELH MIXR DRCT SKNT THTA
+        Station identifier: SGF
+        Observation time: 040612/1200
 
-hPa C C % g/kg deg knot K
+        Lifted Index: -5.77
+        Total Totals Index: 54.2
+        SBCAPE: 1883.7 J/kg
+        SBCIN: -87.1 J/kg
+        LCL: 951 hPa
+        LFC: 801 hPa
+        EL: 207 hPa
 
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+        WARNING: SEVERE THUNDERSTORMS ARE POSSIBLE!
 
-986.0 22.4 21.2 92.9 16.60 200 5 298.3
-
-948.0 23.6 21.1 85.9 16.85 229 23 301.3
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-4.8 -23.3 -57.3 2.8 3.46 63 35 1148.1
-
-4.7 -24.0 -57.6 2.9 3.41 59 35 1151.8
-
-Station Information and sounding indices
-
-Station identifier: SGF
-
-Observation time: 040612/1200
-
-Lifted Index: -5.77
-
-Total Totals Index: 54.2
-
-SBCAPE: 1883.7 J/kg
-
-SBCIN: -87.1 J/kg
-
-LCL: 951 hPa
-
-LFC: 801 hPa
-
-EL: 207 hPa
-
-WARNING: SEVERE THUNDERSTORMS ARE POSSIBLE!
-
->>>
+        >>>
 
 **Evaluation Criteria**
 
