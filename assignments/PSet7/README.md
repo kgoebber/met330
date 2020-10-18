@@ -18,7 +18,9 @@
 
 *Due Via Blackboard*
 
--   A PDF version of your code. Make sure the honor code appears in the comment block at the beginning of the script and that it has your full typed out name. This will serve as your assertion that you have upheld the honor code.
+-   A PDF version of your code. Make sure the honor code appears in the comment block at the
+beginning of the script and that it has your full typed out name. This will serve as your 
+assertion that you have upheld the honor code.
 
 -   A PDF version of your responses to the questions.
 
@@ -59,10 +61,10 @@ And the long-term mean
 
 (<https://www.esrl.noaa.gov/psd/thredds/catalog/Datasets/ncep.reanalysis.derived/surface/catalog.html?dataset=Datasets/ncep.reanalysis.derived/surface/air.sig995.mon.ltm.nc>)
 
-Program Output: Global temperature anomaly maps for 2018
-(**global\_anomaly\_2018.png)**; Time series of surface temperature
-anomalies from Jan. 1951 through Dec. 2018, with a five-year running
-mean (**global\_average\_anomaly.png**).
+Program Output: Global temperature anomaly maps for 2019
+(**global\_anomaly\_2019.png)**; Time series of surface temperature
+anomalies from Jan. 1951 through Dec. 2019 for a specific location
+ (**global\_average\_anomaly.png**).
 
 Written Response: Formal typed response to questions \#3
 
@@ -74,9 +76,9 @@ Written Response: Formal typed response to questions \#3
 
     a.  What does the variation in yearly global surface temperature
         anomalies (from the 1981--2010 long-term mean) look like across
-        the globe for 2017, 2018, and 2019? (Graphic)
+        the globe for 2019? (Graphic)
 
-    b.  What locations had the warmest and coldest anomalies for each
+    b.  What locations had the warmest and coldest anomalies for the
         year? Plot a marker and the anomaly value on the map from
         problem 1a.
 
@@ -98,7 +100,7 @@ Written Response: Formal typed response to questions \#3
     time series and the 2019 global anomaly map. Be sure to adequately
     reference the graphic in the post, as well as anything needing
     particular reference to explain what is in the graphic and what it
-    means. Specifically discusses the year 2018 and how region
+    means. Specifically discusses the year 2019 and how region
     perceptions about the year could be different as compared to the
     global mean average temperature anomaly based on where you live.
     Feel free to focus on regions of the U.S. or across the entire
@@ -117,19 +119,20 @@ Written Response: Formal typed response to questions \#3
 
         2. Isolate the year for the analysis from the current data
 
-        3. Compute the anomaly for each grid point for the current year data (both arrays should have the same shape)
+        3. Compute the anomaly for each grid point for the current year monthly data 
+        (both arrays should have the same shape)
 
         4. Compute the average anomaly for each grid point by averaging over the 12 months
 
-    -   Finding max/min values of 2D data was completed in the Jupyter
-        notebook for tabular data
+    -   Finding max/min values of 2D data can be accomplished with the where method on an 
+    Xarray DataArray - as exampled in the lecture material.
 
     -   Cyclic Points for display purposes can be accomplished with a
         Cartopy method
 
         (<https://scitools.org.uk/cartopy/docs/latest/cartopy/util/util.html?highlight=add_cyclic>)
 
-    -   The module xarray provides a method for computing running means.
+    -   The module Xarray provides a method for computing running means.
         (<http://xarray.pydata.org/en/stable/generated/xarray.DataArray.rolling.html>)
 
 Output Examples:
@@ -150,7 +153,7 @@ a particular criterion. The assignment is out of 50 points.
 
 -   Efficiently coded and correct Problem 2 (10 points)
 
--   Write-ups for Problems 1 and 2 (10 points)
+-   Problem 3 Write-up of Pseudo-Blog Post (10 points)
 
 -   Informative and Clear Output from running code (10 points)
 
